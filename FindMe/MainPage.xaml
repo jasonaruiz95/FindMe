@@ -10,29 +10,31 @@
             VerticalOptions="Center">
 
             <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                Source="globe.png"
+                SemanticProperties.Description="Globe icon"
                 HeightRequest="200"
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Hello, World!"
+                Text="Find Me!"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Welcome to .NET Multi-platform App UI"
+                Text="Enter your name, then click the button to share your location."
                 SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                SemanticProperties.Description="Enter your name, then click the button to share your location."
                 FontSize="18"
                 HorizontalOptions="Center" />
+
+            <Entry Placeholder="Enter your name" SemanticProperties.Hint="Enter your name to be used when sharing location" HorizontalOptions="Center" x:Name="UsernameEntry"/>
 
             <Button
                 x:Name="CounterBtn"
                 Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
+                SemanticProperties.Hint="Presents apps available to share your name and location via."
+                Clicked="OnFindMeClicked"
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>
